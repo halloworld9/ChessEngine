@@ -45,6 +45,7 @@ public class Square
     {
         return new Square(a + b.Index);
     }
+    
 
     public override bool Equals(object? obj)
     {
