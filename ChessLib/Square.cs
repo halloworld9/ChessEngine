@@ -45,7 +45,6 @@ public class Square
     {
         return new Square(a + b.Index);
     }
-    
 
     public override bool Equals(object? obj)
     {
@@ -54,6 +53,11 @@ public class Square
         if (obj is Square square)
             return square.Index == Index;
         return false;
+    }
+
+    public override int GetHashCode()
+    {
+        return Index;
     }
 
     public static Square operator +(Square a, int b)
