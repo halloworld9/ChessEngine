@@ -61,7 +61,7 @@ public class Board : ICloneable
         {
             for (int col = 0; col < 8; col++)
             {
-                c[row * 8 + col] = _pieces[(row+2) * 8 + (col+1)].PieceChar;
+                c[row * 8 + col] = _pieces[(row+2) * 10 + (col+1)].PieceChar;
             }
         }
         return c;
